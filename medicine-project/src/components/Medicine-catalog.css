@@ -1,0 +1,58 @@
+
+.medicine-catalog {
+  padding: 20px;
+  text-align: center;
+}
+.medicine-catalog h1 {
+ color: #1a563c;
+ padding: 30px;
+ margin-top: 10px;
+}
+.medicine-list { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.medicine-card {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(23, 76, 53, 0.10);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.medicine-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+.medicine-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.medicine-card h2 {
+    color: #1a563c;
+    margin-bottom: 10px;
+}
+
+.medicine-card p {
+    color: #555;
+    margin: 8px 0;
+}
+@media (max-width: 768px) {
+  .medicine-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .medicine-list {
+    grid-template-columns: 1fr;
+  }
+}
