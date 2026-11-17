@@ -16,11 +16,11 @@
 }
 
 .medicine-card {
-  border: 1px solid #ddd;
+  border: 1px solid #d7eee3;
   padding: 25px;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 4px 10px rgba(23, 76, 53, 0.10);
+  box-shadow: 0 4px 20px rgba(17, 202, 57, 0.1);
   transition: transform 0.2s ease;
   text-align: left;
 }
@@ -42,8 +42,11 @@
 }
 
 .medicine-card p {
-    color: #555;
+    color: #000000;
     margin: 8px 0;
+}
+.medicine-card p:first-of-type {
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .medicine-list {
