@@ -1,0 +1,174 @@
+.homepage {
+  color: #263b32;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.homepage * {
+  box-sizing: border-box;
+}
+
+.homepage a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  color: #245c49 !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 4px;
+  color: white !important;
+  background: #245c49;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  min-height: 330px;
+  padding: 50px max(24px, calc((100% - 960px) / 2));
+  background: #edf4ef;
+}
+
+.hero > div:first-child {
+  max-width: 560px;
+}
+
+.eyebrow {
+  color: #245c49;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin: 8px 0;
+  color: #173f37;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+}
+
+.hero > div:first-child > p:not(.eyebrow) {
+  margin: 0 0 20px;
+}
+
+.hero-mark {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  flex: 0 0 150px;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: #428268;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+.benefits,
+.prescriptions {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 36px 20px;
+}
+
+.benefits h2,
+.prescriptions h2 {
+  margin-top: 0;
+  color: #173f37;
+  font-family: Georgia, serif;
+}
+
+.benefits ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  padding-left: 20px;
+}
+
+.prescriptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin-bottom: 30px;
+  background: #173f37;
+  color: white;
+}
+
+.prescriptions h2 {
+  margin-bottom: 4px;
+  color: white;
+}
+
+.prescriptions p {
+  margin: 0;
+}
+
+.button-light {
+  flex-shrink: 0;
+  color: #173f37 !important;
+  background: white;
+}
+
+.footer {
+  flex-wrap: wrap;
+  color: #66736c;
+  font-size: 0.85rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .header,
+  .header nav,
+  .prescriptions {
+    flex-wrap: wrap;
+  }
+
+  .header nav {
+    order: 1;
+    width: 100%;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 40px 24px;
+  }
+
+  .hero-mark {
+    display: none;
+  }
+
+  .benefits ul {
+    display: block;
+  }
+}
