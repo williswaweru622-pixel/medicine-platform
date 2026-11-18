@@ -1,16 +1,69 @@
-# React + Vite
+# HealthNest 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Smart Medicine Management Application
 
-Currently, two official plugins are available:
+## About HealthNest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+HealthNest is a Medicine Management Single Page Application (SPA) built with React. It helps users manage medicines efficiently by providing an organized platform to browse, search, add, and view medicine information.
 
-## React Compiler
+Our goal is to make medicine management simple, accessible, and user-friendly through a clean and responsive interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Homepage:** Welcoming landing page with an overview of HealthNest and featured medicines.
+- **Medicine Catalog:** Displays available medicines in an organized layout.
+- **Add Medicine:** Allows users to add new medicines to the collection.
+- **Medicine Details:** Displays detailed information about individual medicines.
+- **Search and Filter:** Helps users quickly find medicines.
+- **Dynamic Data:** Uses JSON Server as a mock backend for storing and retrieving medicine data.
+- **Navigation:** React Router enables smooth navigation between application pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React – Building reusable user interface components.
+- Vite – Development environment and build tool.
+- Tailwind CSS – Styling and responsive design.
+- React Router – Client-side navigation.
+- JSON Server – Mock REST API.
+- JavaScript – Application functionality.
+- HTML5 – Application structure.
+- Git and GitHub – Version control and collaboration.
+
+
+## Team Collaboration
+
+HealthNest is developed collaboratively, with each team member responsible for a specific feature.
+
+| Team Member | Responsibility |
+|---|---|
+| Wilis | Scrum Master, shared setup, routing and search/filter |
+| Alvan | Medicine Catalog |
+| Angel | Add Medicine |
+| Ivy | Medicine Details |
+| Brenda | Homepage |
+
+## Learning Objectives
+
+Through this project, we aim to strengthen our skills in:
+
+- React component development.
+- Reusable components and props.
+- React Router navigation.
+- Working with REST APIs.
+- Managing shared application data.
+- Git and GitHub collaboration.
+- Responsive user interface development.
+
+## Future Improvements
+
+- User authentication.
+- Medicine reminders.
+- Expiry-date notifications.
+- Improved medicine search and filtering.
+- Enhanced accessibility and mobile responsiveness.
+
+## Contributors
+
+Developed with teamwork, creativity, and collaboration by the HealthNest development team.
+
+**HealthNest – Making Medicine Management Simpler! **
