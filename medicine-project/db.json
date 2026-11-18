@@ -8,6 +8,36 @@
       "stock": 1,
       "prescriptionRequired": false,
       "id": 1
+      "id": "1",
+      "name": "Paracetamol",
+      "category": "Pain relief",
+      "price": 5,
+      "description": "Helps with headaches and fever.",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "name": "Ibuprofen",
+      "category": "Pain relief",
+      "price": 8,
+      "description": "Helps with pain and swelling.",
+      "image": ""
+    },
+    {
+      "id": "3",
+      "name": "Amoxicillin",
+      "category": "Antibiotics",
+      "price": 12,
+      "description": "Fights infections caused by bacteria.",
+      "image": ""
+    },
+    {
+      "id": "4",
+      "name": "Vitamin C",
+      "category": "Vitamins",
+      "price": 6,
+      "description": "Helps the body stay strong.",
+      "image": ""
     }
   ]
 }

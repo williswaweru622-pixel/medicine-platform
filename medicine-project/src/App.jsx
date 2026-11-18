@@ -35,6 +35,10 @@ function App() {
       <AddMedicine onAddMedicine={handleAddMedicine} />
     </div>
   );
+import Search from "./page/Search";
+
+function App() {
+  return <Search />;
 }
 
 export default App;
