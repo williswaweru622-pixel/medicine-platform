@@ -71,16 +71,16 @@ const catalogMedicines = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkZnI1glzSa-H_XJqeT_42JO2RQ5H5G_ZCSa1kO8d-w&s",
   },
   {
-    name: "Calcuim Tablets",
+    name: "Calcium Tablets",
     price: 250,
     category: "Supplements",
-    image: "https://storagemydawadocsprod.blob.core.windows.net/cmsimages/ask-Photoroom%20(4)_2026-10-30T090506.68Z.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Q1dAEwgivOyx12oAHnnL91oer0yUsEC0f84nR0OlWg&s=10",
   },
   {
     name: "Saline Nasal Spray",
     price: 300,
     category: "Nasal Care",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyNCVDenBckGSXnrwB6lZE_id3ltqVYY1wMghugrInvw&s=10",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXFnXIzd4-zKBRndOd2_SDWuxjTT0dRgz263EHDJbNQ&s=10",
   },
   {
     name: "Multivitamin Tablets",
