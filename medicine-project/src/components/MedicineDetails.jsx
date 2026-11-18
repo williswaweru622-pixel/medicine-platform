@@ -1,15 +1,17 @@
 import { useParams } from "react-router-dom";
-import medicinesData from "../../../db.json";
+import medicinesData from "../../db.json";
+import SiteNavigation from "./SiteNavigation.jsx";
+
 function MedicineDetails() {
     const { id } = useParams();
     const medicineId = id;
     const medicine = medicinesData.medicines.find(
-        (item) => item.id === medicineId
+        (item) => String(item.id) === medicineId
     );
     if (!medicine) {
         return (
             <div className="flex min-h-screen items-center justify-center bg-emerald-50">
-                <h2 className="text=xl font-bold text-red-600">
+                <h2 className="text-xl font-bold text-red-600">
                     Medicine not Found
                 </h2>
             </div>
@@ -17,26 +19,8 @@ function MedicineDetails() {
     }
     return (
         <div className="min-h-screen bg-slate-50 ">
-            <header className="bg-white shadow-sm">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <h1 className="text-2xl font-extrabold text-emerald-800">
-            HealthNest
-          </h1>
-
-          <span className="text-sm font-medium text-slate-500">
-            Your health, our priority
-          </span>
-        </nav>
-      </header>
+      <SiteNavigation />
       <main className="mx-auto max-w-7xl px-6 py-10">
-        <div className="mb-8 text-sm text-slate-500">
-          Home <span className="mx-2">/</span>
-          Medicine Catalog <span className="mx-2">/</span>
-          <span className="font-semibold text-emerald-700">
-            Medicine Details
-          </span>
-        </div>
-
         <div className="mb-8">
           <h2 className="text-3xl font-extrabold text-slate-800">
             Medicine Details

@@ -13,8 +13,7 @@
   text-decoration: none;
 }
 
-.header,
-.footer {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,6 +21,8 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  color: #245c49;
+  background: transparent;
 }
 
 .logo {
@@ -32,19 +33,23 @@
 
 .header nav {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 12px;
 }
 
-.header nav a:hover {
-  text-decoration: underline;
-}
-
-.button {
+.header nav a,
+.header .button {
   display: inline-block;
-  padding: 10px 16px;
-  border-radius: 4px;
+  padding: 10px 18px;
+  border-radius: 8px;
   color: white !important;
   background: #245c49;
+  text-decoration: none;
+}
+
+.header nav a:hover,
+.header .button:hover {
+  background: #173f37;
 }
 
 .hero {
@@ -132,9 +137,14 @@
 }
 
 .button-light {
+  display: inline-block;
   flex-shrink: 0;
+  padding: 12px 22px;
+  border-radius: 6px;
   color: #173f37 !important;
   background: white;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .footer {

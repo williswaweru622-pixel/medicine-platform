@@ -4,7 +4,7 @@ import HomePage from "./components/HomePage.jsx";
 import Search from "./components/Search.jsx";
 import MedicineCatalog from "./components/Medicine-catalog.jsx";
 import AddMedicine from "./components/AddMedicine.jsx";
-import MedicineDetails from "./components/medicine/MedicineDetails.jsx";
+import MedicineDetails from "./components/MedicineDetails.jsx";
 
 function App() {
   async function handleAddMedicine(newMedicine) {
