@@ -63,6 +63,11 @@ Through this project, we aim to strengthen our skills in:
 - Enhanced accessibility and mobile responsiveness.
 
 ## Contributors
+- Alvan
+- Ivy
+- Angel
+- Willis
+- Brenda
 
 Developed with teamwork, creativity, and collaboration by the HealthNest development team.
 
