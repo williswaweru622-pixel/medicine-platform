@@ -1,7 +1,10 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Search from "./page/Search";
+import MedicineCatalog from "./components/Medicine-catalog";
 import AddMedicine from "./components/AddMedicine.jsx";
 
 function App() {
-
   async function handleAddMedicine(newMedicine) {
     try {
       const response = await fetch("http://localhost:3000/medicines", {
@@ -19,10 +22,9 @@ function App() {
       const savedMedicine = await response.json();
 
       alert("Medicine added successfully!");
-
       console.log(savedMedicine);
-      return savedMedicine;
 
+      return savedMedicine;
     } catch (error) {
       console.error(error);
       alert("Could not add medicine.");
@@ -31,14 +33,17 @@ function App() {
   }
 
   return (
-    <div>
-      <AddMedicine onAddMedicine={handleAddMedicine} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Search />} />
+        <Route path="/shop" element={<MedicineCatalog />} />
+        <Route
+          path="/add-medicine"
+          element={<AddMedicine onAddMedicine={handleAddMedicine} />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
-import Search from "./page/Search";
-
-function App() {
-  return <Search />;
 }
 
 export default App;
