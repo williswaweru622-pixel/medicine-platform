@@ -111,29 +111,29 @@ function Search() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-dark via-brand to-[#0b3b2b] p-4 text-brand-pale sm:p-8">
+    <div className="min-h-screen bg-white p-4 text-brand-dark sm:p-8">
       <SiteNavigation />
       <main className="mx-auto max-w-6xl py-8">
         <div className="mb-8">
-          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand-light">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
             Health Nest catalog
           </p>
-          <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-brand-dark sm:text-4xl">
             Search Medicines
           </h1>
-          <p className="mt-2 max-w-2xl text-brand-pale/80">
+          <p className="mt-2 max-w-2xl text-slate-600">
             Find a medicine by name or narrow the list by category.
           </p>
         </div>
 
         <section
           aria-label="Medicine search and filters"
-          className="mb-8 grid gap-4 rounded-2xl border border-white/10 bg-white/10 p-4 shadow-xl backdrop-blur sm:grid-cols-[minmax(0,1fr)_16rem] sm:p-6"
+          className="mb-8 grid gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-md sm:grid-cols-[minmax(0,1fr)_16rem] sm:p-6"
         >
           <div>
             <label
               htmlFor="medicine-search"
-              className="mb-2 block text-sm font-semibold text-white"
+              className="mb-2 block text-sm font-semibold text-brand-dark"
             >
               Medicine name
             </label>
@@ -145,14 +145,14 @@ function Search() {
               onChange={(event) =>
                 updateSearchPreferences("searchTerm", event.target.value)
               }
-              className="w-full rounded-xl border border-white/20 bg-white px-4 py-3 text-brand-dark outline-none transition placeholder:text-slate-400 focus:border-brand-light focus:ring-2 focus:ring-brand-light/50"
+              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-brand-dark outline-none transition placeholder:text-slate-400 focus:border-brand-light focus:ring-2 focus:ring-brand-light/50"
             />
           </div>
 
           <div>
             <label
               htmlFor="medicine-category"
-              className="mb-2 block text-sm font-semibold text-white"
+              className="mb-2 block text-sm font-semibold text-brand-dark"
             >
               Category
             </label>
@@ -162,7 +162,7 @@ function Search() {
               onChange={(event) =>
                 updateSearchPreferences("selectedCategory", event.target.value)
               }
-              className="w-full rounded-xl border border-white/20 bg-white px-4 py-3 text-brand-dark outline-none transition focus:border-brand-light focus:ring-2 focus:ring-brand-light/50"
+              className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-brand-dark outline-none transition focus:border-brand-light focus:ring-2 focus:ring-brand-light/50"
             >
               {categories.map((category) => (
                 <option key={category} value={category}>
@@ -174,12 +174,12 @@ function Search() {
         </section>
 
         {storageError && (
-          <p role="alert" className="mb-4 text-sm text-red-200">
+          <p role="alert" className="mb-4 text-sm text-red-700">
             {storageError}
           </p>
         )}
 
-        <p aria-live="polite" className="mb-4 text-sm text-brand-pale/80">
+        <p aria-live="polite" className="mb-4 text-sm text-slate-600">
           {isLoading
             ? "Loading medicines..."
             : error
@@ -190,11 +190,11 @@ function Search() {
         </p>
 
         {error ? (
-          <p role="alert" className="rounded-xl bg-red-950/50 p-4 text-red-100">
+          <p role="alert" className="rounded-xl bg-red-50 p-4 text-red-700">
             {error}
           </p>
         ) : !isLoading && filteredMedicines.length === 0 ? (
-          <p className="rounded-xl border border-white/10 bg-white/5 p-6 text-brand-pale/80">
+          <p className="rounded-xl border border-slate-200 bg-slate-50 p-6 text-slate-600">
             No medicines match your search. Try another name or category.
           </p>
         ) : (
@@ -202,28 +202,28 @@ function Search() {
             {filteredMedicines.map((medicine) => (
               <li
                 key={medicine.id ?? medicine.name}
-                className="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-lg transition duration-200 hover:-translate-y-1 hover:border-brand-light/50 hover:bg-white/15"
+                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-md transition duration-200 hover:-translate-y-1 hover:border-brand-light/50 hover:bg-emerald-50"
               >
                 <div className="mb-4 flex items-start justify-between gap-3">
-                  <h2 className="text-xl font-semibold text-white">
+                  <h2 className="text-xl font-semibold text-brand-dark">
                     {medicine.name}
                   </h2>
                   {medicine.category && (
-                    <span className="shrink-0 rounded-full bg-brand-light/20 px-3 py-1 text-xs font-medium text-brand-pale">
+                    <span className="shrink-0 rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-brand-dark">
                       {medicine.category}
                     </span>
                   )}
                 </div>
-                <p className="text-lg font-semibold text-brand-light">
+                <p className="text-lg font-semibold text-brand">
                   KSh {medicine.price}
                 </p>
                 {medicine.description && (
-                  <p className="mt-2 text-sm leading-6 text-brand-pale/80">
+                  <p className="mt-2 text-sm leading-6 text-slate-600">
                     {medicine.description}
                   </p>
                 )}
                 {medicine.stock !== undefined && (
-                  <p className="mt-4 border-t border-white/10 pt-3 text-sm text-brand-pale/70">
+                  <p className="mt-4 border-t border-slate-200 pt-3 text-sm text-slate-500">
                     Stock: {medicine.stock}
                   </p>
                 )}
