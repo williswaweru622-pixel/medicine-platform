@@ -1,0 +1,166 @@
+{
+  "medicines": [
+    {
+      "id": "1",
+      "name": "Paracetamol",
+      "category": "Pain Relief",
+      "price": 100,
+      "description": "Commonly used for pain and fever.",
+      "image": "",
+      "stock": 50,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "2",
+      "name": "Ibuprofen",
+      "category": "Pain Relief",
+      "price": 150,
+      "description": "A medicine used for pain and inflammation.",
+      "image": "",
+      "stock": 30,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "3",
+      "name": "Cetirizine",
+      "category": "Allergy Relief",
+      "price": 120,
+      "description": "An antihistamine used for allergy symptoms.",
+      "image": "",
+      "stock": 40,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "4",
+      "name": "Antacid Tablets",
+      "category": "Digestive Health",
+      "price": 180,
+      "description": "Used to relieve symptoms of excess stomach acid.",
+      "image": "",
+      "stock": 20,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "5",
+      "name": "Ultra Vitamin C Plus",
+      "category": "Vitamins",
+      "price": 200,
+      "description": "A vitamin C supplement.",
+      "image": "",
+      "stock": 25,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "6",
+      "name": "Ascoril Cough Syrup",
+      "category": "Cough and Cold",
+      "price": 250,
+      "description": "A cough syrup product.",
+      "image": "",
+      "stock": 30,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "7",
+      "name": "Panadol",
+      "category": "Pain Relief",
+      "price": 120,
+      "description": "A paracetamol-based pain relief medicine.",
+      "image": "",
+      "stock": 40,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "8",
+      "name": "Strepsils",
+      "category": "Throat Relief",
+      "price": 180,
+      "description": "Lozenges used to soothe throat discomfort.",
+      "image": "",
+      "stock": 25,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "9",
+      "name": "Loratadine",
+      "category": "Allergy Relief",
+      "price": 150,
+      "description": "An antihistamine used for allergy symptoms.",
+      "image": "",
+      "stock": 30,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "10",
+      "name": "Omeprazole",
+      "category": "Digestive Health",
+      "price": 200,
+      "description": "A medicine that reduces stomach acid.",
+      "image": "",
+      "stock": 25,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "11",
+      "name": "Oral Rehydration Salts (ORS)",
+      "category": "Rehydration",
+      "price": 50,
+      "description": "A mixture of salts and glucose for fluid replacement.",
+      "image": "",
+      "stock": 100,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "12",
+      "name": "Calcium Tablets",
+      "category": "Supplements",
+      "price": 250,
+      "description": "A calcium supplement.",
+      "image": "",
+      "stock": 50,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "13",
+      "name": "Saline Nasal Spray",
+      "category": "Nasal Care",
+      "price": 300,
+      "description": "A saline solution for nasal care.",
+      "image": "",
+      "stock": 30,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "14",
+      "name": "Multivitamin Tablets",
+      "category": "Vitamins",
+      "price": 350,
+      "description": "A supplement containing multiple vitamins.",
+      "image": "",
+      "stock": 25,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "15",
+      "name": "Zinc Tablets",
+      "category": "Supplements",
+      "price": 100,
+      "description": "A zinc supplement.",
+      "image": "",
+      "stock": 30,
+      "prescriptionRequired": false
+    },
+    {
+      "id": "16",
+      "name": "skin care",
+      "category": "Skincare",
+      "price": 1000,
+      "description": "Moisturizer",
+      "image": "https://koreanskincare.co.uk/cdn/shop/files/800_75b94165-18e2-469e-978a-88eccf2f226a_1024x1024.jpg?v=1773646500",
+      "stock": 10,
+      "prescriptionRequired": true
+    } 
+    
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
