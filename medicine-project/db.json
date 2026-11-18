@@ -1,0 +1,13 @@
+{
+  "medicines": [
+    {
+      "name": "panadol",
+      "category": "Pain Relief",
+      "price": 100,
+      "description": "headaches",
+      "stock": 1,
+      "prescriptionRequired": false,
+      "id": 1
+    }
+  ]
+}
