@@ -1,16 +1,11 @@
 import "./HomePage.css";
+import { Link } from "react-router-dom";
+import SiteNavigation from "./SiteNavigation.jsx";
 
 export default function HomePage() {
   return (
     <div className="homepage">
-      <header className="header">
-        <a className="logo" href="#home">Health Nest</a>
-        <nav aria-label="Main navigation">
-          <a href="/prescriptions">Details</a>
-          <a href="#about">About</a>
-        </nav>
-        <a className="button" href="/shop">Add Medicine</a>
-      </header>
+      <SiteNavigation />
 
       <main>
         <section className="hero" id="home">
@@ -18,7 +13,7 @@ export default function HomePage() {
             <p className="eyebrow">A little care, delivered</p>
             <h1>Health Nest</h1>
             <p>Looking after yourself can be simple. Find everyday health products and friendly prescription support in one place.</p>
-            <a className="button" href="/shop">Explore the shop</a>
+            <Link className="button" to="/shop">Explore the shop</Link>
           </div>
           <div className="hero-mark" aria-hidden="true">+</div>
         </section>
@@ -35,9 +30,9 @@ export default function HomePage() {
         <section className="prescriptions" id="prescriptions">
           <div>
             <h2>Need prescription support?</h2>
-            <p>Visit our prescription area to find the help you need.</p>
+            <p>Search our catalog to find the medicine you need.</p>
           </div>
-          <a className="button button-light" href="/prescriptions">Prescription support</a>
+          <Link className="button button-light" to="/search">Search medicines</Link>
         </section>
       </main>
 
