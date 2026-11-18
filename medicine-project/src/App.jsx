@@ -6,6 +6,10 @@ import Search from "./components/Search.jsx";
 import MedicineCatalog from "./components/Medicine-catalog.jsx";
 import AddMedicine from "./components/AddMedicine.jsx";
 import MedicineDetails from "./components/medicine/MedicineDetails.jsx";
+import HomePage from "./components/HomePage.jsx";
+import Search from "./components/Search.jsx";
+import MedicineCatalog from "./components/Medicine-catalog";
+import AddMedicine from "./components/AddMedicine.jsx";
 
 function App() {
   async function handleAddMedicine(newMedicine) {
@@ -33,6 +37,8 @@ function App() {
 
         <Route path="/shop" element={<MedicineCatalog />} />
 
+        <Route path="/search" element={<Search />} />
+        <Route path="/shop" element={<MedicineCatalog />} />
         <Route
           path="/add-medicine"
           element={<AddMedicine onAddMedicine={handleAddMedicine} />}
