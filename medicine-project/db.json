@@ -1,43 +1,135 @@
 {
   "medicines": [
     {
-      "name": "panadol",
-      "category": "Pain Relief",
-      "price": 100,
-      "description": "headaches",
-      "stock": 1,
-      "prescriptionRequired": false,
-      "id": 1
       "id": "1",
       "name": "Paracetamol",
-      "category": "Pain relief",
-      "price": 5,
-      "description": "Helps with headaches and fever.",
+      "category": "Pain Relief",
+      "price": 100,
+      "description": "Commonly used for pain and fever.",
       "image": ""
     },
     {
       "id": "2",
       "name": "Ibuprofen",
-      "category": "Pain relief",
-      "price": 8,
-      "description": "Helps with pain and swelling.",
+      "category": "Pain Relief",
+      "price": 150,
+      "description": "A medicine used for pain and inflammation.",
       "image": ""
     },
     {
       "id": "3",
-      "name": "Amoxicillin",
-      "category": "Antibiotics",
-      "price": 12,
-      "description": "Fights infections caused by bacteria.",
+      "name": "Cetirizine",
+      "category": "Allergy Relief",
+      "price": 120,
+      "description": "An antihistamine used for allergy symptoms.",
       "image": ""
     },
     {
       "id": "4",
-      "name": "Vitamin C",
-      "category": "Vitamins",
-      "price": 6,
-      "description": "Helps the body stay strong.",
+      "name": "Antacid Tablets",
+      "category": "Digestive Health",
+      "price": 180,
+      "description": "Used to relieve symptoms of excess stomach acid.",
       "image": ""
+    },
+    {
+      "id": "5",
+      "name": "Ultra Vitamin C Plus",
+      "category": "Vitamins",
+      "price": 200,
+      "description": "A vitamin C supplement.",
+      "image": ""
+    },
+    {
+      "id": "6",
+      "name": "Ascoril Cough Syrup",
+      "category": "Cough and Cold",
+      "price": 250,
+      "description": "A cough syrup product.",
+      "image": ""
+    },
+    {
+      "id": "7",
+      "name": "Panadol",
+      "category": "Pain Relief",
+      "price": 120,
+      "description": "A paracetamol-based pain relief medicine.",
+      "image": ""
+    },
+    {
+      "id": "8",
+      "name": "Strepsils",
+      "category": "Throat Relief",
+      "price": 180,
+      "description": "Lozenges used to soothe throat discomfort.",
+      "image": ""
+    },
+    {
+      "id": "9",
+      "name": "Loratadine",
+      "category": "Allergy Relief",
+      "price": 150,
+      "description": "An antihistamine used for allergy symptoms.",
+      "image": ""
+    },
+    {
+      "id": "10",
+      "name": "Omeprazole",
+      "category": "Digestive Health",
+      "price": 200,
+      "description": "A medicine that reduces stomach acid.",
+      "image": ""
+    },
+    {
+      "id": "11",
+      "name": "Oral Rehydration Salts (ORS)",
+      "category": "Rehydration",
+      "price": 50,
+      "description": "A mixture of salts and glucose for fluid replacement.",
+      "image": ""
+    },
+    {
+      "id": "12",
+      "name": "Calcium Tablets",
+      "category": "Supplements",
+      "price": 250,
+      "description": "A calcium supplement.",
+      "image": ""
+    },
+    {
+      "id": "13",
+      "name": "Saline Nasal Spray",
+      "category": "Nasal Care",
+      "price": 300,
+      "description": "A saline solution for nasal care.",
+      "image": ""
+    },
+    {
+      "id": "14",
+      "name": "Multivitamin Tablets",
+      "category": "Vitamins",
+      "price": 350,
+      "description": "A supplement containing multiple vitamins.",
+      "image": ""
+    },
+    {
+      "id": "15",
+      "name": "Zinc Tablets",
+      "category": "Supplements",
+      "price": 100,
+      "description": "A zinc supplement.",
+      "image": ""
+    },
+    {
+      "name": "skin care",
+      "category": "Skincare",
+      "price": 1000,
+      "description": "Moisturiser",
+      "image": "https://koreanskincare.co.uk/cdn/shop/files/800_75b94165-18e2-469e-978a-88eccf2f226a_1024x1024.jpg?v=1773646500",
+      "stock": 1,
+      "prescriptionRequired": true,
+      "id": "RLNnTyUlU9U"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
