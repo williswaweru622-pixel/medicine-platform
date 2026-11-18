@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import SiteNavigation from "./SiteNavigation.jsx";
 import "./Medicine-catalog.css";
 
@@ -200,41 +199,6 @@ function MedicineCatalog() {
     </div>
   </>
 );
-}
-
-export default MedicineCatalog;
-    <>
-      <SiteNavigation />
-      <div className="medicine-catalog">
-        <h1>Medicine Catalog</h1>
-        {recentlyAdded && (
-          <p role="status">
-            {recentlyAdded.name} was added to the catalog.
-          </p>
-        )}
-        {loadError && <p role="alert">{loadError}</p>}
-        <div className="medicine-list">
-          {[...displayedMedicines, ...addedMedicines].map((medicine) => (
-            <div
-              key={medicine.id ?? medicine.name}
-              className="medicine-card"
-            >
-              {medicine.image && (
-                <img src={medicine.image} alt={medicine.name} />
-              )}
-              <h2>{medicine.name}</h2>
-              <p>Price: Ksh {medicine.price}</p>
-              <p>Category: {medicine.category}</p>
-              {medicine.description && <p>{medicine.description}</p>}
-              {medicine.stock !== undefined && (
-                <p>Stock: {medicine.stock}</p>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
 }
 
 export default MedicineCatalog;
