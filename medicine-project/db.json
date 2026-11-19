@@ -159,8 +159,17 @@
       "image": "https://koreanskincare.co.uk/cdn/shop/files/800_75b94165-18e2-469e-978a-88eccf2f226a_1024x1024.jpg?v=1773646500",
       "stock": 10,
       "prescriptionRequired": true
-    } 
-    
+    },
+    {
+      "name": "amoxicillin",
+      "category": "Antibiotics",
+      "price": 100,
+      "description": "Stopping the growth of bacteria",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpWkXRXX8XFodei-BjjTeJcZ_9McD-5c3twinStWK-A&s=10",
+      "stock": 55,
+      "prescriptionRequired": true,
+      "id": "GsKz87lPb8g"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
