@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SiteNavigation from "./SiteNavigation.jsx";
+import { getMedicines } from "../medicineStorage.js";
 
 const SEARCH_PREFERENCES_KEY = "medicine-search-preferences";
 
@@ -68,18 +69,8 @@ function Search() {
 
     async function loadMedicines() {
       try {
-        const response = await fetch("http://localhost:3001/medicines", {
-          signal: controller.signal,
-        });
-
-        if (!response.ok) {
-          throw new Error(`Request failed (${response.status})`);
-        }
-
-        const data = await response.json();
-        if (!Array.isArray(data)) {
-          throw new Error("The medicine response was not a list");
-        }
+        const data = await getMedicines();
+        if (controller.signal.aborted) return;
 
         setMedicines(data);
       } catch (loadError) {

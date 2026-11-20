@@ -169,6 +169,46 @@
       "stock": 55,
       "prescriptionRequired": true,
       "id": "GsKz87lPb8g"
+    },
+    {
+      "name": "seven seas",
+      "category": "Digestive Health",
+      "price": 200,
+      "description": "A daily nutritional supplement rich in essential Omega-3 fatty acids (EPA and DHA) as well as Vitamins A and D.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShlJNNxedMmOiK8PWdDxzRAMzckqleakpvNvuSTZO3fw&s=10",
+      "stock": 30,
+      "prescriptionRequired": true,
+      "id": "nqhkdXxMJBY"
+    },
+    {
+      "name": "piriton",
+      "category": "Allergy Relief",
+      "price": 10,
+      "description": "It helps in allergy problems",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShLOOxvlLakH9poT0MjxNY2ecCLXveHy118ze75G7Vag&s=10",
+      "stock": 20,
+      "prescriptionRequired": true,
+      "id": "VV6DEYAqRgA"
+    },
+    {
+      "name": "ARVs",
+      "category": "Other",
+      "price": 1000,
+      "description": "slows down death",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMIXata-BDC50B7pDq-B8jYjtQwe7dJfFuRvCXBXR-Lw&s=10",
+      "stock": 70,
+      "prescriptionRequired": true,
+      "id": "0FHcr1L5vIo"
+    },
+    {
+      "name": "condom",
+      "category": "Other",
+      "price": 100,
+      "description": "helps to prevent pregnancy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXyStHt8n2uSPaVillLRJfh2o6Sy6xwI8By3p4Ee7tog&s",
+      "stock": 9000,
+      "prescriptionRequired": false,
+      "id": "jNeEIgaS0iE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,19 +1,63 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import medicinesData from "../../db.json";
 import SiteNavigation from "./SiteNavigation.jsx";
+import { getMedicine } from "../medicineStorage.js";
 
 function MedicineDetails() {
     const { id } = useParams();
-    const medicineId = id;
-    const medicine = medicinesData.medicines.find(
-        (item) => String(item.id) === medicineId
-    );
-    if (!medicine) {
+    const [medicine, setMedicine] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [loadError, setLoadError] = useState("");
+
+    useEffect(() => {
+        const controller = new AbortController();
+
+        async function loadMedicine() {
+            setIsLoading(true);
+            setLoadError("");
+            try {
+                const data = await getMedicine(id);
+                if (controller.signal.aborted) return;
+                if (!data) {
+                    setLoadError("Medicine not found.");
+                    return;
+                }
+                setMedicine(data);
+            } catch (error) {
+                if (error.name === "AbortError") return;
+                console.error("Could not load medicine:", error);
+                setLoadError("Medicine details could not be loaded.");
+            } finally {
+                if (!controller.signal.aborted) {
+                    setIsLoading(false);
+                }
+            }
+        }
+
+        loadMedicine();
+        return () => controller.abort();
+    }, [id]);
+
+    if (isLoading) {
         return (
-            <div className="flex min-h-screen items-center justify-center bg-emerald-50">
-                <h2 className="text-xl font-bold text-red-600">
-                    Medicine not Found
-                </h2>
+            <div className="min-h-screen bg-slate-50">
+                <SiteNavigation />
+                <p role="status" className="p-8 text-center text-slate-600">
+                    Loading medicine details...
+                </p>
+            </div>
+        );
+    }
+
+    if (loadError || !medicine) {
+        return (
+            <div className="min-h-screen bg-emerald-50">
+                <SiteNavigation />
+                <div className="flex min-h-[60vh] items-center justify-center">
+                    <h2 role="alert" className="text-xl font-bold text-red-600">
+                        {loadError || "Medicine not found."}
+                    </h2>
+                </div>
             </div>
         );
     }

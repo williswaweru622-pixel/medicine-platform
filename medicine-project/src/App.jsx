@@ -5,22 +5,11 @@ import Search from "./components/Search.jsx";
 import MedicineCatalog from "./components/Medicine-catalog.jsx";
 import AddMedicine from "./components/AddMedicine.jsx";
 import MedicineDetails from "./components/MedicineDetails.jsx";
+import { addMedicine } from "./medicineStorage.js";
 
 function App() {
   async function handleAddMedicine(newMedicine) {
-    const response = await fetch("http://localhost:3001/medicines", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(newMedicine)
-    });
-
-    if (!response.ok) {
-      throw new Error(`Could not save medicine (HTTP ${response.status}).`);
-    }
-
-    return response.json();
+    return addMedicine(newMedicine);
   }
 
   return (
