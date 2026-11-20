@@ -33,11 +33,18 @@ export async function getMedicines() {
 }
 
 export async function getMedicine(id) {
-  return (
-    readMedicines().find(
-      (medicine) => String(medicine.id) === String(id)
-    ) ?? null
+  const medicine = readMedicines().find(
+    (savedMedicine) => String(savedMedicine.id) === String(id)
   );
+  if (!medicine) return null;
+
+  const seedMedicine = seedData.medicines.find(
+    (seed) => String(seed.id) === String(id)
+  );
+  return {
+    ...medicine,
+    image: medicine.image || seedMedicine?.image || "",
+  };
 }
 
 export async function addMedicine(medicine) {

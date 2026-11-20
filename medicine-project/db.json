@@ -6,7 +6,7 @@
       "category": "Pain Relief",
       "price": 100,
       "description": "Commonly used for pain and fever.",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Paracetamol_generico.jpg",
       "stock": 50,
       "prescriptionRequired": false
     },
@@ -16,7 +16,7 @@
       "category": "Pain Relief",
       "price": 150,
       "description": "A medicine used for pain and inflammation.",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Ibuprofen-400.jpg",
       "stock": 30,
       "prescriptionRequired": false
     },
@@ -26,7 +26,7 @@
       "category": "Allergy Relief",
       "price": 120,
       "description": "An antihistamine used for allergy symptoms.",
-      "image": "",
+      "image": "https://www.scabpharmacy.com/wp-content/uploads/2024/11/Cetirizine-10mg-film-coated-Tablets-BP-3-scaled.jpg",
       "stock": 40,
       "prescriptionRequired": false
     },
@@ -36,7 +36,7 @@
       "category": "Digestive Health",
       "price": 180,
       "description": "Used to relieve symptoms of excess stomach acid.",
-      "image": "",
+      "image": "https://www.penncare.net/wp-content/uploads/2022/04/90089AC.jpg",
       "stock": 20,
       "prescriptionRequired": false
     },
@@ -46,7 +46,7 @@
       "category": "Vitamins",
       "price": 200,
       "description": "A vitamin C supplement.",
-      "image": "",
+      "image": "https://www.vitabiotics.com/cdn/shop/files/ultra_vitamin_c_front_CTSRC120T1WL4E.png",
       "stock": 25,
       "prescriptionRequired": false
     },
@@ -56,7 +56,7 @@
       "category": "Cough and Cold",
       "price": 250,
       "description": "A cough syrup product.",
-      "image": "",
+      "image": "https://storagemydawadocsprod.blob.core.windows.net/productimages/00895/00895_1.jpg",
       "stock": 30,
       "prescriptionRequired": false
     },
@@ -66,7 +66,7 @@
       "category": "Pain Relief",
       "price": 120,
       "description": "A paracetamol-based pain relief medicine.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrvMChjSDT78zCIQwXAfsHmeK04rz_3Db4vDRww4RSxg&s=10",
       "stock": 40,
       "prescriptionRequired": false
     },
@@ -76,7 +76,7 @@
       "category": "Throat Relief",
       "price": 180,
       "description": "Lozenges used to soothe throat discomfort.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7gPGYwQlueZUCpYteAssPJN9n1N7SX_PjcXmidnkV5A&s=10",
       "stock": 25,
       "prescriptionRequired": false
     },
@@ -86,7 +86,7 @@
       "category": "Allergy Relief",
       "price": 150,
       "description": "An antihistamine used for allergy symptoms.",
-      "image": "",
+      "image": "https://thehealthpharmacy.co.uk/wp-content/uploads/2024/02/20250524_124713.jpg",
       "stock": 30,
       "prescriptionRequired": false
     },
@@ -96,7 +96,7 @@
       "category": "Digestive Health",
       "price": 200,
       "description": "A medicine that reduces stomach acid.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWc44eQlFchLNCi3ZdwQ5AEW5Eb_86a97JPcmlJ0j0ng&s",
       "stock": 25,
       "prescriptionRequired": false
     },
@@ -106,7 +106,7 @@
       "category": "Rehydration",
       "price": 50,
       "description": "A mixture of salts and glucose for fluid replacement.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzkZnI1glzSa-H_XJqeT_42JO2RQ5H5G_ZCSa1kO8d-w&s",
       "stock": 100,
       "prescriptionRequired": false
     },
@@ -116,7 +116,7 @@
       "category": "Supplements",
       "price": 250,
       "description": "A calcium supplement.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Q1dAEwgivOyx12oAHnnL91oer0yUsEC0f84nR0OlWg&s=10",
       "stock": 50,
       "prescriptionRequired": false
     },
@@ -126,7 +126,7 @@
       "category": "Nasal Care",
       "price": 300,
       "description": "A saline solution for nasal care.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjXFnXIzd4-zKBRndOd2_SDWuxjTT0dRgz263EHDJbNQ&s",
       "stock": 30,
       "prescriptionRequired": false
     },
@@ -136,7 +136,7 @@
       "category": "Vitamins",
       "price": 350,
       "description": "A supplement containing multiple vitamins.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8-R09rg_Gd1vGNem4a_cf7LGpF3dnCjwM4ZhBBAW6g&s",
       "stock": 25,
       "prescriptionRequired": false
     },
@@ -146,7 +146,7 @@
       "category": "Supplements",
       "price": 100,
       "description": "A zinc supplement.",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctKkWzh_Y-nbgj1kGTFwmJxPF58pqD66PE-EI3FYlMw&s=10",
       "stock": 30,
       "prescriptionRequired": false
     },
