@@ -17,3 +17,6 @@ https://williswaweru622-pixel.github.io/medicine-platform/
 
 The workflow also publishes the app entry point as `404.html` so direct links
 to app routes continue to work on GitHub Pages.
+
+Local builds use the root URL; the GitHub Actions build sets the repository
+path automatically.

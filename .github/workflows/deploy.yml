@@ -36,6 +36,8 @@ jobs:
       - name: Build app
         run: npm run build
         working-directory: medicine-project
+        env:
+          VITE_BASE_PATH: /medicine-platform/
 
       - name: Add route fallback
         run: cp dist/index.html dist/404.html
