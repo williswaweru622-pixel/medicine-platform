@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import SiteNavigation from "./SiteNavigation.jsx";
 import { getMedicines } from "../medicineStorage.js";
+import { useMemo } from "react";
+import Fuse from "fuse.js";
 
 const SEARCH_PREFERENCES_KEY = "medicine-search-preferences";
 
@@ -93,13 +95,29 @@ function Search() {
     ...new Set(medicines.map((medicine) => medicine.category).filter(Boolean)),
   ];
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
-  const filteredMedicines = medicines.filter((medicine) => {
-    const name = typeof medicine.name === "string" ? medicine.name : "";
-    return (
-      name.toLowerCase().includes(normalizedSearchTerm) &&
-      (selectedCategory === "All" || medicine.category === selectedCategory)
-    );
-  });
+  const categoryFilteredMedicines = medicines.filter(
+    (medicine) =>
+      selectedCategory === "All" || medicine.category === selectedCategory
+  );
+
+  const fuse = useMemo(
+    () =>
+      new Fuse(categoryFilteredMedicines, {
+        keys: ["name", "description", "category"],
+        threshold: 0.35,
+        ignoreLocation: true,
+        minMatchCharLength: 2,
+      }),
+    [categoryFilteredMedicines]
+  );
+
+  const filteredMedicines = useMemo(() => {
+    if (!normalizedSearchTerm) {
+      return categoryFilteredMedicines;
+    }
+
+    return fuse.search(normalizedSearchTerm).map((result) => result.item);
+  }, [normalizedSearchTerm, categoryFilteredMedicines, fuse]);
 
   return (
     <div className="min-h-screen bg-white p-4 text-brand-dark sm:p-8">
